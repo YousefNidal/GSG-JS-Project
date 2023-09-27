@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Alarm Clock</title>
+</head>
+<body>
+    
+
+    <!-- <div class="wrapper">
+      <img src="images/clock.png" alt="clock">
+      <h1>00:00:00 PM</h1>
+      <div class="content">
+        <div class="column">
+          <select>
+            <option value="Hour" selected disabled hidden>Hour</option>
+          </select>
+        </div>
+        <div class="column">
+          <select>
+            <option value="Minute" selected disabled hidden>Minute</option>
+          </select>
+        </div>
+        <div class="column">
+          <select>
+            <option value="AM/PM" selected disabled hidden>AM/PM</option>
+          </select>
+        </div>
+      </div>
+      <button>Set Alarm</button>
+    </div>
+    <div class="alarms">
+        <h2>Alarms</h2>
+        <ul id="alarmList">
+            
+        </ul>
+    </div> -->
+
+
+
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Alarm Clock</title>
+</head>
+<body>
+    <div class="wrapper">
+        <img src="images/clock.png" alt="clock">
+        <h1 id="currentTime">00:00:00 AM</h1>
+        <div class="content">
+            <div class="column">
+                <select id="hourSelect">
+                    <option value="Hour" selected disabled hidden>Hour</option>
+                </select>
+            </div>
+            <div class="column">
+                <select id="minuteSelect">
+                    <option value="Minute" selected disabled hidden>Minute</option>
+                </select>
+            </div>
+            <div class="column">
+                <select id="periodSelect">
+                    <option value="AM/PM" selected disabled hidden>AM/PM</option>
+                    
+                </select>
+            </div>
+        </div>
+        <button id="setAlarmButton">Set Alarm</button>
+    </div>
+
+    <div class="alarms">
+        <h2>Alarms</h2>
+        <ul id="alarmList">
+            <!-- Alarms will be added here dynamically -->
+        </ul>
+    </div>
+
+    <audio id="alarmSound" src="./files/alarm.mp3"></audio>
+    <script src="script.js"></script>
+
+
+   
+    
+
+</body>
+</html>
+
